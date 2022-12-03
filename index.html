@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Calculator.com </title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- javaScript added in bottom of body -->
+    </head>
+
+    <body>
+        <div class="calculator">
+
+            <input type="text" class="calculator-screen" id="result"  value="" />
+
+            <div class="calculator-keys">
+
+                <button type="button" class="operator" value="AC" onclick="clr()" >AC</button>
+                <button type="button" class="operator" onclick="clr()" value="c" >
+                    <img src="assets/images/delete.png" alt="">
+                </button>
+                <button type="button" onclick="numbtn('/')" class="operator" value="/">&divide;</button>
+                <button type="button" onclick="numbtn('*')" class="operator" value="*">&times;</button>
+
+                <button type="button" onclick="numbtn('7')" value="7">7</button>
+                <button type="button" onclick="numbtn('8')" value="8">8</button>
+                <button type="button" onclick="numbtn('9')" value="9">9</button>
+                <button type="button" onclick="numbtn('-')" class="operator" value="-">-</button>
+
+
+                <button type="button" onclick="numbtn('4')" value="4">4</button>
+                <button type="button" onclick="numbtn('5')" value="5">5</button>
+                <button type="button" onclick="numbtn('6')" value="6">6</button>
+                <button type="button" onclick="numbtn('+')" class="operator" value="+">+</button>
+
+
+                <button type="button" onclick="numbtn('1')" value="1">1</button>
+                <button type="button" onclick="numbtn('2')" value="2">2</button>
+                <button type="button" onclick="numbtn('3')" value="3">3</button>
+
+
+                <button type="button" onclick="numbtn('00')" value="00">00</button>
+                <button type="button" onclick="numbtn('0')" value="0">0</button>
+                <button type="button" onclick="numbtn('.')" class="decimal" value=".">.</button>
+                <button type="button" onclick="solve()" class="equal-sign" value="=">=</button>
+
+            </div>
+        </div>
+
+        <!-- Here we are addding javaScript file  -->
+        <script src="assets/js/main.js"></script>
+        <!-- <script src="assets/js/jQuery.js"></script> -->
+    </body>
+
+</html>
